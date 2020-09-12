@@ -8,6 +8,7 @@ main {
         grid-template-columns: 100%;
         grid-template-rows: 100vh;
         overflow: hidden;
+        transition: transform 500ms ease-out;
         .page {
             transition: transform 1s cubic-bezier(0.22, 0.61, 0.36, 1);
             grid-column: 1/2;

@@ -96,16 +96,16 @@
                     width: 100%;
                 }
                 &:nth-child(1) {
-                    transition: transform 250ms ease-out 500ms, opacity 250ms ease-out 500ms, background 250ms ease-out 0s;
+                    transition: transform 250ms ease-out 100ms, opacity 250ms ease-out 100ms, background 250ms ease-out 0s;
                 }
                 &:nth-child(2) {
-                    transition: transform 250ms ease-out 750ms, opacity 250ms ease-out 750ms, background 250ms ease-out 0s;
+                    transition: transform 250ms ease-out 200ms, opacity 250ms ease-out 200ms, background 250ms ease-out 0s;
                 }
                 &:nth-child(3) {
-                    transition: transform 250ms ease-out 1s, opacity 250ms ease-out 1s, background 250ms ease-out 0s;
+                    transition: transform 250ms ease-out 300ms, opacity 250ms ease-out 300ms, background 250ms ease-out 0s;
                 }
                 &:nth-child(4) {
-                    transition: transform 250ms ease-out 1.25s, opacity 250ms ease-out 1.25s, background 250ms ease-out 0s;
+                    transition: transform 250ms ease-out 400ms, opacity 250ms ease-out 400ms, background 250ms ease-out 0s;
                 }
                 &:hover {
                     background: rgb(20, 20, 20);
