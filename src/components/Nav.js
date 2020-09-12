@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faUser, faHome, faBook, faBrain } from "@fortawesome/free-solid-svg-icons";
 
 //? Import Styles
 import "../styles/Nav.scss";
 
-const Nav = ({ setCurrentPage }) => {
-    const [openNav, setOpenNav] = useState(false);
-
+const Nav = ({ setCurrentPage, openNav, setOpenNav }) => {
     function goToPage(e) {
         e = parseInt(e.target.value);
         setCurrentPage(e);

@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDotCircle, faCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCircle as farCircle } from "@fortawesome/free-regular-svg-icons";
 
 //? Import Styles
 import "../styles/Dots.scss";
@@ -15,22 +16,22 @@ const Dots = ({ currentPage, setCurrentPage }) => {
             <ul>
                 <li>
                     <button value={0} onClick={toPage}>
-                        <FontAwesomeIcon icon={currentPage === 0 ? faDotCircle : faCircle} style={{ pointerEvents: "none" }} />
+                        <FontAwesomeIcon icon={currentPage === 0 ? farCircle : faCircle} style={{ pointerEvents: "none" }} />
                     </button>
                 </li>
                 <li>
                     <button value={1} onClick={toPage}>
-                        <FontAwesomeIcon icon={currentPage === 1 ? faDotCircle : faCircle} style={{ pointerEvents: "none" }} />
+                        <FontAwesomeIcon icon={currentPage === 1 ? farCircle : faCircle} style={{ pointerEvents: "none" }} />
                     </button>
                 </li>
                 <li>
                     <button value={2} onClick={toPage}>
-                        <FontAwesomeIcon icon={currentPage === 2 ? faDotCircle : faCircle} style={{ pointerEvents: "none" }} />
+                        <FontAwesomeIcon icon={currentPage === 2 ? farCircle : faCircle} style={{ pointerEvents: "none" }} />
                     </button>
                 </li>
                 <li>
                     <button value={3} onClick={toPage}>
-                        <FontAwesomeIcon icon={currentPage === 3 ? faDotCircle : faCircle} style={{ pointerEvents: "none" }} />
+                        <FontAwesomeIcon icon={currentPage === 3 ? farCircle : faCircle} style={{ pointerEvents: "none" }} />
                     </button>
                 </li>
             </ul>

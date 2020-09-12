@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight, faChevronLeft, faBook } from "@fortawesome/free-solid-svg-icons";
 
 //? Import Styles
 import "../styles/Page2.scss";
@@ -15,7 +15,9 @@ const Page2 = ({ currentPage, setCurrentPage, transforms }) => {
     return (
         <section className={`Page2 page 2`} style={transforms[2]}>
             <div className="page-navigation">
-                <h2>Erfahrung:</h2>
+                <h2>
+                    <FontAwesomeIcon icon={faBook} /> Erfahrung:
+                </h2>
                 <button className="prevButton" value={currentPage - 1} onClick={toPage}>
                     <FontAwesomeIcon icon={faChevronLeft} style={{ pointerEvents: "none" }} />
                 </button>
