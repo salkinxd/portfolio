@@ -13,6 +13,7 @@ import Page3 from "./Page3";
 import Dots from "./Dots";
 
 const App = () => {
+    const [openNav, setOpenNav] = useState(false);
     const [currentPage, setCurrentPage] = useState(0);
     const [maxPages, setMaxPages] = useState(3);
     const [innerHeight, setInnerHeight] = useState(window.innerHeight);
@@ -98,10 +99,14 @@ const App = () => {
             setCurrentPage(currentPage - 1);
         }
     }
+
+    function closeNav(e) {
+        setOpenNav(false);
+    }
     return (
         <main onWheel={onScroll} onTouchStart={touchStartHandler} onTouchMove={touchMoveHandler} onTouchEnd={touchEndHandler}>
-            <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} maxPages={maxPages} setMaxPages={setMaxPages} />
-            <div className="content">
+            <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} maxPages={maxPages} setMaxPages={setMaxPages} openNav={openNav} setOpenNav={setOpenNav} />
+            <div className="content" style={openNav === true ? { transform: "translateX(100px)" } : { transform: "translateX(0)" }} onClick={closeNav}>
                 <Home currentPage={currentPage} setCurrentPage={setCurrentPage} transforms={transforms} />
                 <Page1 currentPage={currentPage} setCurrentPage={setCurrentPage} transforms={transforms} />
                 <Page2 currentPage={currentPage} setCurrentPage={setCurrentPage} transforms={transforms} />
