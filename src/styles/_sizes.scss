@@ -9,3 +9,31 @@
         }
     }
 }
+
+@media screen and (max-width: 550px) {
+    .Home {
+        header {
+            display: block;
+
+            .headline {
+                h1,
+                h2 {
+                    font-size: 2.5em;
+                }
+            }
+            .right-arrow {
+                margin-top: 64px;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-height: 400px) {
+    .Home {
+        header {
+            .right-arrow {
+                margin-top: 0;
+            }
+        }
+    }
+}
