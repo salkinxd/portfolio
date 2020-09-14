@@ -10,7 +10,7 @@ const Kenntnisse = ({ currentPage }) => {
                         Deutsch (<i>Muttersprache</i>)
                     </li>
                     <li>
-                        Englisch (<i>Fliesend in Wort und Schreiben</i>)
+                        Englisch (<i>Fließend in Wort und Schrift</i>)
                     </li>
                 </ul>
             </div>
