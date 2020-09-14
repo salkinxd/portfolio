@@ -100,7 +100,7 @@ const App = () => {
         }
     }
 
-    function closeNav(e) {
+    function closeNav() {
         setOpenNav(false);
     }
     return (
@@ -111,8 +111,8 @@ const App = () => {
                 <Page1 currentPage={currentPage} setCurrentPage={setCurrentPage} transforms={transforms} />
                 <Page2 currentPage={currentPage} setCurrentPage={setCurrentPage} transforms={transforms} />
                 <Page3 currentPage={currentPage} setCurrentPage={setCurrentPage} transforms={transforms} />
-                <Dots currentPage={currentPage} setCurrentPage={setCurrentPage} />
             </div>
+            <Dots currentPage={currentPage} setCurrentPage={setCurrentPage} />
         </main>
     );
 };
